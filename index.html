@@ -38,14 +38,16 @@
         <p>Precio: 16.500€</p> <button  class="btn btn-detalles" data-coche="Mercedes-Benz CLA" data-precio="16.500€" data-detalles="Os presentamos esta preciosidad de Mercedes CLA 
         del año 2014, cuenta con un motor 2.2L de 177cv!!! Cuenta con muchos extras como el techo solar corredizo, paquete de sonido de (advanced) original de mercedes, asientos deportivos en cuero
         y muchos más extras que podeis consultarnos en el contacto de abajo" >Más detalles</button>
+        <button class="btn btn-gallery" data-gallery="cla220">Ver todas las fotos</button>
         <br><br>
 
-        
+
         <img src="img/Polish_20241120_195806094.jpg" width="400" alt="Coche 4">
         <h3>Mercedes-Benz CLA</h3>
         <p>Precio: 18.000€</p> <button  class="btn btn-detalles" data-coche="Merces-Benz CLA" data-precio="18.000" data-detalles="Mercedes CLA 200 AMG line. Traemos este
         mercedes del año 2014 con 160000km, viene equipado con asientos deportivos en cuero, 3 modos de conducción, techo solar 
         y muchos extras más que podeis saber contactandonos abajo. El coche esta en un estado increible, se puede ver y rpobar al igual que todos los coches a la venta" >Más detalles</button>
+        <button class="btn btn-gallery" data-gallery="cla200">Ver todas las fotos</button>
         <br><br>
 
 
@@ -53,6 +55,7 @@
         <h3>Volkswagen Touran</h3>
         <p>Precio: 6.600€</p> <button  class="btn btn-detalles" data-coche="Volkswagen Touran" data-precio="6.600€" data-detalles="También constamos de esta Volkswagen Touran del año 2012, esta cuenta con un motor de 1.6 de 105cv
         cuenta ambién con varios extras como el techo solar corredizo, volante multifunción... Cuelquier consulta os dejamos nuestro contacto abajo de esta página" >Más detalles</button>
+        <button class="btn btn-gallery" data-gallery="vwtouran">Ver todas las fotos</button>
         <br><br>
 
 
@@ -60,6 +63,7 @@
         <h3>Volkswagen Golf GTI</h3>
         <p>Precio: 10.400€</p> <button  class="btn btn-detalles" data-coche="Volkswagen Golf GTI" data-precio="10.400€" data-detalles="Contamos con un motor 2.0 de 215cv, asientos aclimatizados, sensores de aparcamiento,
         techo solar corredizo, pantalla, control de crucero, volante multifunción, dos mandos... para saber mucho más sobre este coche puedes contactarnos abajo " >Más detalles</button>
+        <button class="btn btn-gallery" data-gallery="gti">Ver todas las fotos</button>
         <br><br>
 
 
@@ -67,17 +71,78 @@
         <h3>Ford Galaxy</h3>
         <p>Precio: 5.500€</p> <button  class="btn btn-detalles" data-coche="Ford Galaxy" data-precio="5.500€" data-detalles="En este caso contamos con un motor 1.8 de 125cv, 7 plazas, bola de remolque, dos mandos, 270.000km, 
         buen estado tanto de interior y exterior como de motor. Para más información nos pueden contactar abajo" >Más detalles</button>
+        <button class="btn btn-gallery" data-gallery="galaxy">Ver todas las fotos</button>
         <br><br>
 
-
-        <img src="img/IMG_20241117_162341.jpg" width="400" alt="Coche 5">
-        <h3>Renault Trafic</h3>
-        <p>Precio: 3.900€</p> <button  class="btn btn-detalles" data-coche="Renault Trafic" data-precio="3.900€" data-detalles="Ahora pasamos con esta furgoneta, Renault Trafic del año 2006, Cuenta con un motor 
-        1.9 de 105cv un muy buen motor para este tipo de furgonetas, tiene 413.000km tiene la correa cambiada a los 360.000km y las 4 ruedas nuevas" >Más detalles</button>
-        <br><br>
 
   </section>
+<!-- Galerías ocultas al inicio -->
+<section id="galerias" class="section" style="display: none;">
+  <h2 class="section-title">Galería de Fotos</h2>
 
+  <!-- Galería del Mercedes-Benz CLA 220-->
+  <div class="gallery" data-gallery="cla220">
+    <h3>Mercedes-Benz CLA</h3>
+    <div class="gallery-grid">
+      <img src="img/Mercedes220.jpg" width="400" alt="CLA Foto 1">
+      <img src="img/cla220/Cla220_foto2.jpg" alt="CLA Foto 2">
+      <img src="img/cla220/Cla220_foto3.jpg" alt="CLA Foto 3">
+      <img src="img/cla220/Cla220_foto4.jpg" alt="CLA Foto 4">
+      <img src="img/cla220/Cla220_foto5.jpg" alt="CLA Foto 5">
+      <img src="img/cla220/Cla220_foto6.jpg" alt="CLA Foto 6">
+    </div>
+    <button class="btn btn-back" onclick="volverCoches()">Volver a Coches</button>
+  </div>
+
+  <!-- Galería del Volkswagen Golf GTI -->
+  <div class="gallery" data-gallery="gti">
+    <h3>Volkswagen Golf GTI</h3>
+    <div class="gallery-grid">
+      <img src="img/IMG-20241104-WA0030.jpg" alt="Golf GTI Foto 1">
+      <img src="img/golfgti/Gti_foto2.jpg" alt="Golf GTI Foto 2">
+      <img src="img/golfgti/Gti_foto3.jpg" alt="Golf GTI Foto 3">
+      <img src="img/golfgti/Gti_foto4.jpg" alt="Golf GTI Foto 4">
+      <img src="img/golfgti/Gti_foto5.jpg" alt="Golf GTI Foto 5">
+    </div>
+    <button class="btn btn-back" onclick="volverCoches()">Volver a Coches</button>
+  </div>
+
+    <!-- Galería del Mercedes Benz CLA 200 -->
+    <div class="gallery" data-gallery="cla200">
+      <h3>Mercedes-Benz CLA 200</h3>
+      <div class="gallery-grid">
+        <img src="img/Polish_20241120_195806094.jpg" alt=" Foto 1">
+        <img src="img/cla200/Cla200_foto2.jpg" alt=" Foto 2">
+        <img src="img/cla200/Cla200_foto3.jpg" alt=" Foto 3">
+        <img src="img/cla200/Cla200_foto4.jpg" alt=" Foto 4">
+        <img src="img/cla200/Cla200_foto5.jpg" alt=" Foto 5">
+      </div>
+      <button class="btn btn-back" onclick="volverCoches()">Volver a Coches</button>
+    </div>
+
+    <!-- Galería del VW Touran -->
+    <div class="gallery" data-gallery="vwtouran">
+      <h3>Volkswagen Touran</h3>
+      <div class="gallery-grid">
+        <img src="img/Vwtoruan_img/Touran_foto2.jpg" alt=" Foto 2">
+        <img src="img/Vwtoruan_img/Touran_foto3.jpg" alt=" Foto 3">
+        <img src="img/Vwtoruan_img/Touran_foto4.jpg" alt=" Foto 4">
+        <img src="img/Vwtoruan_img/Touran_foto5.jpg" alt=" Foto 5">
+        <img src="img/Vwtoruan_img/Touran_foto6.jpg" alt=" Foto 6">
+        <img src="img/Vwtoruan_img/Touran_foto7.jpg" alt=" Foto 7">
+        <img src="img/Vwtoruan_img/Touran_foto8.jpg" alt=" Foto 8">
+      </div>
+      <button class="btn btn-back" onclick="volverCoches()">Volver a Coches</button>
+    </div>
+        <!-- Galería del Ford Galaxy -->
+        <div class="gallery" data-gallery="galaxy">
+          <h3>Volkswagen Touran</h3>
+          <div class="gallery-grid">
+          <p>⚠️para consultar las imagenes de este vehiculo contacte con nosotros⚠️</p>
+          </div>
+          <button class="btn btn-back" onclick="volverCoches()">Volver a Coches</button>
+        </div>
+</section>
   <section id="contacto" class="section contacto">
     <h2 class="section-title">Contáctanos</h2>
     <p>Teléfono: +34 641 101 571 / +34 697 697 362</p>
