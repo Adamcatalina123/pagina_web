@@ -31,3 +31,28 @@ window.addEventListener('click', (e) => {
     modal.style.display = 'none';
   }
 });
+// Botones para mostrar las galerías
+const botonesGaleria = document.querySelectorAll('.btn-gallery');
+const seccionCoches = document.getElementById('coches');
+const seccionGalerias = document.getElementById('galerias');
+
+botonesGaleria.forEach(boton => {
+  boton.addEventListener('click', () => {
+    const galleryId = boton.getAttribute('data-gallery');
+
+    // Ocultamos la sección de coches
+    seccionCoches.style.display = 'none';
+
+    // Mostramos la galería correspondiente
+    seccionGalerias.style.display = 'block';
+    document.querySelectorAll('.gallery').forEach(gallery => {
+      gallery.style.display = gallery.getAttribute('data-gallery') === galleryId ? 'block' : 'none';
+    });
+  });
+});
+
+// Función para volver a la sección de coches
+function volverCoches() {
+  seccionCoches.style.display = 'block';
+  seccionGalerias.style.display = 'none';
+}
